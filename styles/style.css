@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wholeBackground{
+    background-color: rgba(252, 249, 249, 0.993);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.items{
+    width: 900px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,50%);
+    gap: 30px;
+    grid-auto-rows: auto;
+    margin: 50px 0px 0px 35px;
+}
+.container{
+    position: relative;
+    width:100%;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px gray;
+}
+.items img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0);
+}
+.container:hover .overlay{
+    opacity: 0.75;
+}
+.text{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.socialhandles{
+    position: fixed;
+    right: -10px;
+    bottom: 33.3%;
+    width: 80px;
+    height: 320px;
+}
+.socialhandles img{
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 5px 10px 0px gray;
+    opacity: 0.5;
+}
+.socialhandles img:hover{
+    opacity:1.0;
+    transition: 0.5s;
+    background-color: white;
+    transform: rotate(360deg);
+}
